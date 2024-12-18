@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="fellows.html">
+        <img src="images/logo2.jpg" alt="Logo2" class="logo2">
+    </a>
+
+    <a href="fellows.html">
+        <button class="back-button">
+            &#8592; Voltar
+        </button>
+    </a>
+
+    <div class="container2">
+        <h1>CADASTRE-SE</h1>
+        
+        <form id="registerForm" method="POST" action="/cadastro">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome" class="form-input">
+
+            <label for="type">Você é?</label>
+            <div class="type-selector">
+                <label>
+                    <input type="radio" name="type" value="fisica" checked>Pessoa Física
+                </label>
+                <label>
+                    <input type="radio" name="type" value="juridica">Pessoa Jurídica
+                </label>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" class="form-input">
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" class="form-input">
+
+            <button class="btn-login" type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <div class="modal hidden">
+        <div class="modal-content">
+            <h2>Cadastro Concluído!</h2>
+            <button class="btn-back">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
